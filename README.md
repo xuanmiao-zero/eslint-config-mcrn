@@ -38,7 +38,14 @@ npm install eslint-config-mcrn --save-dev
 ```js
 {
   // 使用 mcrn 编码规范
-  extends: 'eslint-config-mcrn',
+  "extends": 'eslint-config-mcrn',
+  "globals": {
+      "__DEV__": false,
+      "fetch": false,
+      "navigator": false,
+      "store": false,
+      "mconnect": false
+    }
 }
 ```
 
